@@ -14,7 +14,7 @@ function chunk(array, size) {
             arrayTemp.push(temp);
         }
     }
-    console.log(arrayTemp);
+    return arrayTemp;
 };
 var data = [1, 2, 3, 4, 5, 6, 7, 8]
 
