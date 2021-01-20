@@ -1,10 +1,12 @@
+console.log('Segundo ejercicio');
+console.log('*****************************************');
 function chunk(array, size) {
     var arrayTemp = new Array();
-    k = 0;
-    longArray = array.length / size;
-    for (i = 0; i < longArray; i++) {
+    let k = 0;
+    let longArray = array.length / size;
+    for (let i = 0; i < longArray; i++) {
         var temp = [];
-        for (j = 0; j < size; j++) {
+        for (let j = 0; j < size; j++) {
             temp[j] = array[k];
             k++;
         }
