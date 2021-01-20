@@ -11,10 +11,10 @@ function deepEqual(a, b) {
 
      if(keys1.length == keys2.length ){
         for(var i = 0; i < keys1.length; i++){
-            if(typeof(a[keys1[i]]) == 'object' && typeof(b[keys1[i]]) == 'object'){
-                deepEqual(a[keys1[i]], b[keys1[i]]);
+            if(typeof(a[keys1[i]]) == 'object' && typeof(b[keys2[i]]) == 'object'){
+                deepEqual(a[keys1[i]], b[keys2[i]]);
             }
-            if(keys1[i] !== keys2[i] && values1[i] !== values2[i]){
+            else if(keys1[i] !== keys2[i] && values1[i] !== values2[i]){
                 return false;
             }
         }
@@ -23,7 +23,6 @@ function deepEqual(a, b) {
 
   }
 
-  console.log(deepEqual(john, john2));
   
   var john = {
     firstName: 'John',
