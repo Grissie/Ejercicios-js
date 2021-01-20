@@ -4,6 +4,6 @@ title1.textContent = 'Open the console';
 
 container.appendChild(title1);
 
-import './deepEqual.js';
-import './chunk.js';
-import './frequency.js';
+import './Ejercicios/deepEqual.js';
+import './Ejercicios/chunk.js';
+import './Ejercicios/frequency.js';
